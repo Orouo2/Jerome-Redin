@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jérôme Redin - Électricien-Plombier</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --accent-color: #ffc107;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/api/placeholder/1200/600");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-section {
+            background-color: var(--secondary-color);
+            padding: 4rem 0;
+        }
+        
+        .service-card {
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-section {
+            padding: 4rem 0;
+        }
+        
+        .contact-info {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        
+        .contact-info i {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        .phone-button {
+            background-color: var(--accent-color);
+            color: #212529;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-button:hover {
+            background-color: #e0a800;
+            transform: scale(1.05);
+        }
+        
+        .section-title {
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--accent-color);
+            bottom: -10px;
+            left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-bolt text-primary me-2"></i>
+                <i class="fas fa-faucet text-primary me-2"></i>
+                Jérôme Redin
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="display-4 fw-bold mb-4">Électricien-Plombier professionnel</h1>
+                <p class="lead mb-5">Des solutions fiables pour tous vos besoins en électricité et plomberie</p>
+                <a href="tel:+33612345678" class="btn phone-button btn-lg">
+                    <i class="fas fa-phone-alt me-2"></i>Appelez-moi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentation Section -->
+    <section class="presentation-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/api/placeholder/600/400" alt="Jérôme Redin au travail" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">À propos de moi</h2>
+                    <p class="lead">Artisan qualifié avec plus de 15 ans d'expérience</p>
+                    <p>Je suis Jérôme Redin, artisan électricien-plombier qualifié, intervenant dans toute la région. Mon expertise me permet de vous proposer des solutions fiables et durables pour tous vos problèmes d'électricité et de plomberie.</p>
+                    <p>Mon approche combine savoir-faire technique, respect des normes de sécurité et satisfaction client. Je m'engage à vous offrir un service de qualité dans les délais convenus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Mes Services</h2>
+            <div class="row">
+                <!-- Électricité -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="card-title">Électricité</h3>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i> Installation électrique</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Mise aux normes</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Dépannage d'urgence</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Tableaux électriques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Plomberie -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-faucet"></i>
+                            </div>
+                            <h3 class="card-title">Plomberie</h3>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i> Installation sanitaire</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Réparation de fuites</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Débouchage canalisations</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Remplacement robinetterie</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rénovation -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3 class="card-title">Rénovation</h3>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i> Salle de bain complète</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Cuisine équipée</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Remise à neuf</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Conseils personnalisés</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Contactez-moi</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Informations de contact</h3>
+                        <p><i class="fas fa-phone-alt"></i> Téléphone: <a href="tel:+33612345678" class="text-white fw-bold">06 12 34 56 78</a></p>
+                        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@jerome-redin.fr" class="text-white">contact@jerome-redin.fr</a></p>
+                        <p><i class="fas fa-clock"></i> Horaires: Du lundi au vendredi, de 8h à 17h</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Zone d'intervention: Toute la région</p>
+                        <div class="mt-4">
+                            <a href="tel:+33612345678" class="btn phone-button btn-lg">
+                                <i class="fas fa-phone-alt me-2"></i>Appelez maintenant
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Envoyez-moi un message</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Téléphone</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3>Jérôme Redin</h3>
+                    <p>Électricien-Plombier professionnel</p>
+                    <p>Service de qualité et satisfaction garantie</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Accueil</a></li>
+                        <li><a href="#services" class="text-white">Services</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-phone-alt me-2"></i>06 12 34 56 78</p>
+                    <p><i class="fas fa-envelope me-2"></i>contact@jerome-redin.fr</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p>&copy; 2025 Jérôme Redin - Tous droits réservés | <a href="#" class="text-white">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
